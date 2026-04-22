@@ -1,95 +1,98 @@
-# AI-Powered-Cryptocurrency-Analytics-Dashboard
+Cryptocurrency Analytics Dashboard (AI-Powered)
 
-##  Overview
+An end-to-end AI-driven cryptocurrency analytics system that integrates real-time market data, sentiment analysis, and multiple forecasting models to generate actionable trading insights.
 
-This project is a **real-time cryptocurrency analytics and forecasting dashboard** that integrates historical data with live API data to analyze trends, measure volatility, and predict future prices.
+Overview
 
-The entire system is implemented in a single application using Streamlit.
+This project combines data analytics + machine learning + deep learning + NLP to analyze cryptocurrency trends and predict future prices.
 
----
+It is designed to simulate a real-world financial analytics pipeline, including:
 
-## Features
+Data collection from APIs
+Feature engineering
+Model training & evaluation
+Insight generation
+⚙️ Features
+📊 Data & Visualization
+Real-time cryptocurrency data using CoinGecko API
+Interactive price trend visualization (Plotly)
+Moving averages (MA20)
+Volatility analysis
+Returns distribution histogram
+🤖 Machine Learning Models
+1. ARIMA (Statistical Model)
+Time-series forecasting
+Captures linear trends
+2. LSTM (Deep Learning)
+Sequential neural network for time-series prediction
+Learns complex temporal patterns
+3. Prophet (Facebook)
+Handles seasonality and trend decomposition
+Robust for business time-series forecasting
+📈 Model Evaluation
+Performance comparison using RMSE (Root Mean Squared Error)
+Automatic selection of best-performing model
+🧠 Sentiment Analysis (NLP)
+News data fetched via NewsAPI
+Sentiment scoring using TextBlob
+Measures market mood (positive/negative/neutral)
+💡 Trading Insight System
+Multi-factor decision model combining:
+Sentiment score
+Recent returns
+Market volatility
+Generates:
+✅ BUY
+❌ SELL
+⚠️ HOLD signals
+🛠️ Tech Stack
+Frontend: Streamlit
+Data Processing: Pandas, NumPy
+Visualization: Plotly
+Machine Learning:
+ARIMA (statsmodels)
+LSTM (TensorFlow / Keras)
+Prophet
+NLP: TextBlob
+APIs: CoinGecko, NewsAPI
+📂 Project Structure
+├── app.py              # Main Streamlit application
+├── requirements.txt   # Dependencies
+└── README.md          # Project documentation
 
-*  **Real-Time Price Fetching**
-
-  * Uses CoinGecko API to get live cryptocurrency prices
-
-*  **Historical Trend Analysis**
-
-  * Visualizes past price movements
-
-*  **Volatility Analysis**
-
-  * Calculates market risk using rolling standard deviation
-
-*  **Price Forecasting**
-
-  * Uses Facebook Prophet for time series prediction
-
-*  **Market Insight**
-
-  * Compares live price with predicted trend
-  * Displays Bullish / Bearish signals
-
-*  **Interactive Dashboard**
-
-  * Built using Streamlit and Plotly
-
----
-
-##  Tech Stack
-
-* Python
-* Pandas
-* Streamlit
-* Plotly
-* Prophet
-* Requests
-
-##  Project Structure
-
-crypto-dashboard/
-│
-├── crypto.csv
-├── app.py
-└── README.md
-
-
-##  Installation & Setup
-
-## 1. Clone the repository
-
-```
+🚀 How to Run
+1. Clone Repository
 git clone https://github.com/your-username/crypto-dashboard.git
 cd crypto-dashboard
-```
 
-## 2. Install dependencies
+2. Install Dependencies
+pip install -r requirements.txt
 
-```
-pip install streamlit pandas plotly prophet requests
-```
-
-### 3. Run the application
-
-```
+3. Run Application
 streamlit run app.py
-```
 
-##  How It Works
+🔑 API Setup
+Get free API key from: https://newsapi.org
+Enter it in the sidebar to enable sentiment analysis
+📊 Sample Workflow
+Select cryptocurrency (BTC, ETH, etc.)
+Fetch historical data
+Analyze trends & volatility
+Run forecasting models
+Compare model performance
+Generate trading signals
+⚠️ Limitations
+Sentiment analysis uses generic NLP (not finance-specific)
+Models are trained on limited historical data
+Not intended for real trading decisions
+🔥 Future Improvements
+Replace TextBlob with FinBERT (financial NLP)
+Add XGBoost / Random Forest models
+Implement backtesting system
+Deploy using Streamlit Cloud
+Add real-time trading signals
+👩‍💻 Author
 
-1. Loads historical cryptocurrency data
-2. Fetches real-time price using API
-3. Cleans and preprocesses data
-4. Performs volatility analysis
-5. Applies forecasting model
-6. Displays insights via dashboard
-
-
-##  Future Improvements
-
-* Modularize code into separate components
-* Add multiple cryptocurrency support
-* Integrate sentiment analysis
-* Deploy to cloud
-
+Rose Maria Jose
+BCA (Cloud Technology & Information Security)
+Aspiring Data Analyst / AI Engineer
