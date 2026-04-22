@@ -1,98 +1,89 @@
-Cryptocurrency Analytics Dashboard (AI-Powered)
+AI-Powered Cryptocurrency Analytics Dashboard
 
-An end-to-end AI-driven cryptocurrency analytics system that integrates real-time market data, sentiment analysis, and multiple forecasting models to generate actionable trading insights.
+Project Description
+This project is developed as part of my internship at Amdocs, focusing on analyzing cryptocurrency price trends using advanced time-series forecasting techniques.
 
-Overview
+The system integrates data analytics, statistical modeling, machine learning, and deep learning to predict future price movements based on historical data.
 
-This project combines data analytics + machine learning + deep learning + NLP to analyze cryptocurrency trends and predict future prices.
+It includes a complete pipeline of:
 
-It is designed to simulate a real-world financial analytics pipeline, including:
+Data collection
+Preprocessing & feature engineering
+Exploratory data analysis
+Forecasting using multiple models
 
-Data collection from APIs
-Feature engineering
-Model training & evaluation
-Insight generation
-⚙️ Features
-📊 Data & Visualization
+Objective
+To build an intelligent analytics system that provides data-driven insights into cryptocurrency markets, helping users understand trends, volatility, and potential future movements.
+
+Key Features
+Data Analysis
 Real-time cryptocurrency data using CoinGecko API
-Interactive price trend visualization (Plotly)
-Moving averages (MA20)
-Volatility analysis
-Returns distribution histogram
-🤖 Machine Learning Models
-1. ARIMA (Statistical Model)
-Time-series forecasting
-Captures linear trends
-2. LSTM (Deep Learning)
-Sequential neural network for time-series prediction
-Learns complex temporal patterns
-3. Prophet (Facebook)
-Handles seasonality and trend decomposition
-Robust for business time-series forecasting
-📈 Model Evaluation
-Performance comparison using RMSE (Root Mean Squared Error)
-Automatic selection of best-performing model
-🧠 Sentiment Analysis (NLP)
-News data fetched via NewsAPI
-Sentiment scoring using TextBlob
-Measures market mood (positive/negative/neutral)
-💡 Trading Insight System
-Multi-factor decision model combining:
-Sentiment score
-Recent returns
-Market volatility
-Generates:
-✅ BUY
-❌ SELL
-⚠️ HOLD signals
-🛠️ Tech Stack
-Frontend: Streamlit
-Data Processing: Pandas, NumPy
-Visualization: Plotly
-Machine Learning:
-ARIMA (statsmodels)
-LSTM (TensorFlow / Keras)
-Prophet
-NLP: TextBlob
-APIs: CoinGecko, NewsAPI
-📂 Project Structure
-├── app.py              # Main Streamlit application
-├── requirements.txt   # Dependencies
-└── README.md          # Project documentation
+Historical trend visualization
+Volatility and return analysis
+Moving averages and pattern detection
 
-🚀 How to Run
-1. Clone Repository
+Forecasting Models
+ARIMA → Statistical time-series modeling
+LSTM → Deep learning for sequential prediction
+Prophet → Trend and seasonality forecasting
+
+Model Evaluation
+Performance comparison using RMSE
+Automatic identification of the best-performing model
+
+Sentiment Analysis
+News data fetched using NewsAPI
+Sentiment scoring using NLP (TextBlob)
+Captures market mood and external influence
+
+Intelligent Trading Insight
+Multi-factor signal combining:
+Sentiment
+Returns
+Volatility
+Generates:
+BUY
+SELL
+HOLD
+
+Interactive Dashboard
+Built with Streamlit
+Real-time visualization using Plotly
+User-friendly interface for financial analysis
+
+Tech Stack
+Python
+Pandas, NumPy
+Streamlit
+Plotly
+ARIMA (statsmodels)
+LSTM (TensorFlow/Keras)
+Prophet
+TextBlob (NLP)
+APIs: CoinGecko, NewsAPI
+
+System Workflow
+Collect historical and live crypto data
+Clean and preprocess data
+Perform exploratory data analysis
+Apply forecasting models (ARIMA, LSTM, Prophet)
+Evaluate model performance (RMSE)
+Generate insights and trading signals
+
+How to Run
 git clone https://github.com/your-username/crypto-dashboard.git
 cd crypto-dashboard
-
-2. Install Dependencies
 pip install -r requirements.txt
-
-3. Run Application
 streamlit run app.py
 
-🔑 API Setup
-Get free API key from: https://newsapi.org
-Enter it in the sidebar to enable sentiment analysis
-📊 Sample Workflow
-Select cryptocurrency (BTC, ETH, etc.)
-Fetch historical data
-Analyze trends & volatility
-Run forecasting models
-Compare model performance
-Generate trading signals
-⚠️ Limitations
-Sentiment analysis uses generic NLP (not finance-specific)
-Models are trained on limited historical data
-Not intended for real trading decisions
-🔥 Future Improvements
-Replace TextBlob with FinBERT (financial NLP)
-Add XGBoost / Random Forest models
-Implement backtesting system
-Deploy using Streamlit Cloud
-Add real-time trading signals
-👩‍💻 Author
+Limitations
+Sentiment analysis uses general NLP (not finance-specific)
+Limited historical data affects prediction accuracy
+Not intended for real-world trading decisions
 
-Rose Maria Jose
-BCA (Cloud Technology & Information Security)
-Aspiring Data Analyst / AI Engineer
+Future Improvements
+Integrate FinBERT for financial sentiment analysis
+Add XGBoost / ensemble models
+Implement backtesting system
+Deploy on Streamlit Cloud
+Improve feature engineering and model tuning
