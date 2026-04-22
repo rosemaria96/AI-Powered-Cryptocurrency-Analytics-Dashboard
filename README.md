@@ -1,89 +1,81 @@
 AI-Powered Cryptocurrency Analytics Dashboard
+Overview
 
-Project Description
-This project is developed as part of my internship at Amdocs, focusing on analyzing cryptocurrency price trends using advanced time-series forecasting techniques.
+This project was developed as part of my internship at Amdocs, where I applied data analytics, machine learning, and time-series forecasting techniques to real-world cryptocurrency data.
 
-The system integrates data analytics, statistical modeling, machine learning, and deep learning to predict future price movements based on historical data.
-
-It includes a complete pipeline of:
-
-Data collection
-Preprocessing & feature engineering
-Exploratory data analysis
-Forecasting using multiple models
+The system is an end-to-end cryptocurrency analytics and forecasting dashboard that integrates real-time data, sentiment analysis, and multiple AI models to generate actionable insights.
 
 Objective
-To build an intelligent analytics system that provides data-driven insights into cryptocurrency markets, helping users understand trends, volatility, and potential future movements.
 
-Key Features
-Data Analysis
+To build a data-driven system that analyzes cryptocurrency trends, measures market volatility, and predicts future price movements using historical data.
+Features
+📊 Data Analysis
 Real-time cryptocurrency data using CoinGecko API
 Historical trend visualization
-Volatility and return analysis
-Moving averages and pattern detection
-
-Forecasting Models
-ARIMA → Statistical time-series modeling
-LSTM → Deep learning for sequential prediction
-Prophet → Trend and seasonality forecasting
-
-Model Evaluation
-Performance comparison using RMSE
-Automatic identification of the best-performing model
-
-Sentiment Analysis
-News data fetched using NewsAPI
-Sentiment scoring using NLP (TextBlob)
-Captures market mood and external influence
-
-Intelligent Trading Insight
-Multi-factor signal combining:
+Returns and volatility analysis
+Moving averages for trend detection
+🤖 Forecasting Models
+ARIMA – Statistical time-series model
+LSTM – Deep learning model for sequential prediction
+Prophet – Trend and seasonality forecasting
+📈 Model Evaluation
+Performance comparison using RMSE (Root Mean Squared Error)
+Automatic selection of the best-performing model
+🧠 Sentiment Analysis
+Fetches crypto-related news using NewsAPI
+Performs sentiment analysis using TextBlob
+Captures overall market sentiment
+💡 Trading Insight
+Multi-factor signal based on:
 Sentiment
-Returns
-Volatility
+Recent returns
+Market volatility
 Generates:
-BUY
-SELL
-HOLD
-
-Interactive Dashboard
-Built with Streamlit
-Real-time visualization using Plotly
-User-friendly interface for financial analysis
-
-Tech Stack
+✅ BUY
+❌ SELL
+⚠️ HOLD
+🖥️ Interactive Dashboard
+Built using Streamlit
+Interactive charts with Plotly
+User-friendly interface for analysis
+🛠️ Tech Stack
 Python
 Pandas, NumPy
 Streamlit
 Plotly
 ARIMA (statsmodels)
-LSTM (TensorFlow/Keras)
+LSTM (TensorFlow / Keras)
 Prophet
-TextBlob (NLP)
+TextBlob
 APIs: CoinGecko, NewsAPI
+📂 Project Structure
+crypto-dashboard/
+│
+├── app.py
+├── requirements.txt
+└── README.md
 
-System Workflow
-Collect historical and live crypto data
-Clean and preprocess data
-Perform exploratory data analysis
-Apply forecasting models (ARIMA, LSTM, Prophet)
-Evaluate model performance (RMSE)
-Generate insights and trading signals
-
-How to Run
+🚀 Installation & Setup
 git clone https://github.com/your-username/crypto-dashboard.git
 cd crypto-dashboard
 pip install -r requirements.txt
 streamlit run app.py
 
-Limitations
-Sentiment analysis uses general NLP (not finance-specific)
+🔄 Workflow
+Collect historical and live cryptocurrency data
+Preprocess and clean data
+Perform exploratory data analysis
+Apply forecasting models (ARIMA, LSTM, Prophet)
+Evaluate model performance using RMSE
+Generate trading insights
+⚠️ Limitations
+Sentiment analysis is not finance-specific
 Limited historical data affects prediction accuracy
-Not intended for real-world trading decisions
-
-Future Improvements
-Integrate FinBERT for financial sentiment analysis
+Not intended for real trading decisions
+🔥 Future Improvements
+Integrate FinBERT for advanced sentiment analysis
 Add XGBoost / ensemble models
 Implement backtesting system
 Deploy on Streamlit Cloud
 Improve feature engineering and model tuning
+👩‍💻 Author
